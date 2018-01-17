@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://dataoke.shenbianwang.net/zhifubao/index.html -->
+<html data-dpr="1" style="font-size: 54px;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>支付宝红包</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+
+<script type="text/javascript" src="js/flexible.js"></script>
+<link href="css/app.500bc2f519d2b8aa7080681338c95e76.css" rel="stylesheet">
+</head>
+<body style="font-size: 12px;">
+<div id=app></div>
+<script type="text/javascript" src="js/manifest.ead8357ba739c1caf1a4.js"></script>
+<script type="text/javascript" src="js/vendor.ac063739582c3c810603.js"></script>
+<script type="text/javascript">
+	webpackJsonp([1],{"+F4G":function(t,e){},"Bwg+":function(t,e,i){"use strict";var n=function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("div",{attrs:{id:"app"}},[i("div",{staticClass:"title"}),t._v(" "),t.show?i("packet",{attrs:{ua:t.ua},on:{btnshow:t.btnshow}}):t._e(),t._v(" "),t.show?t._e():i("packet-show",{on:{isShow:t.isShow,err_Show:t.err_Show}}),t._v(" "),t._m(0),t._v(" "),t.isshow?i("div",{staticClass:"info"},[t._v("\n\t\t\t\t复制成功，打开支付宝领取吧\n\t\t\t")]):t._e(),t._v(" "),t.err_show?i("div",{staticClass:"errbox"},[t._v("\n\t\t\t\t\t复制失败，请手动复制\n\t\t")]):t._e()],1)},a=[function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("div",{staticClass:"rule_info on_11_2"},[i("h2",{staticClass:"on_16_1"},[t._v("活动规则")]),t._v(" "),i("p",[t._v("1、即日起到2017年12月31日，每人每天可领取一个支付宝红包，红包金额0.1元-99元不等;")]),t._v(" "),i("p",[t._v("2、红包仅限在实体门店使用支付宝付款时抵扣,不可提现;")]),t._v(" "),i("p",[t._v("3、红包有效期为三天，从获得红包之日算起，超时未使用则自动过期;")])])}],s={render:n,staticRenderFns:a};e.a=s},Fglg:function(t,e,i){"use strict";function n(t){i("RM/x")}var a=i("HVt3"),s=i("cVWV"),o=i("/Xao"),r=n,c=o(a.a,s.a,!1,r,"data-v-657ae042",null);e.a=c.exports},Gz1X:function(t,e){},HVt3:function(t,e,i){"use strict";e.a={name:"HelloWorld",props:{ua:""},data:function(){return{_ua:!0}},methods:{btn_click:function(){this.$emit("btnshow")}},created:function(){}}},JCPg:function(t,e,i){t.exports=i.p+"../addons/huiyunnet_zfbhb/template/mobile/res/1.jpg"},M93x:function(t,e,i){"use strict";function n(t){i("+F4G")}var a=i("NZSx"),s=i("Bwg+"),o=i("/Xao"),r=n,c=o(a.a,s.a,!1,r,null,null);e.a=c.exports},NHnr:function(t,e,i){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=i("5vqR"),a=i("M93x");n.a.config.productionTip=!1,new n.a({el:"#app",template:"<App/>",components:{App:a.a}})},NZSx:function(t,e,i){"use strict";var n=i("Fglg"),a=i("O1km");e.a={name:"app",data:function(){return{show:!0,isshow:!1,err_show:!1,ua:""}},methods:{btnshow:function(){this.show=!1},isShow:function(){var t=this;this.isshow=!0,setTimeout(function(){t.isshow=!1},1e3)},err_Show:function(){var t=this;setTimeout(function(){t.err_show=!1},1e3),this.err_show=!0},_ua:function(){this.ua=navigator.userAgent.toLowerCase(),"alipayclient"==this.ua.match(/AlipayClient/i)?this.ua="alipayclient":this.ua="QT"}},created:function(){this._ua()},components:{packet:n.a,packetShow:a.a}}},O1km:function(t,e,i){"use strict";function n(t){i("Gz1X")}var a=i("Vp70"),s=i("hSHw"),o=i("/Xao"),r=n,c=o(a.a,s.a,!1,r,"data-v-68f076fa",null);e.a=c.exports},"RM/x":function(t,e){},Vp70:function(t,e,i){"use strict";var n=i("dPXb"),a=i.n(n);e.a={name:"packetShow",data:function(){return{tkl:"联7宸雅鑫略格k秋馨"}},methods:{ismobile:function(t){var e=navigator.userAgent;navigator.appVersion;if(!/AppleWebKit.*Mobile/i.test(navigator.userAgent)&&!/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))return e.indexOf("iPad")>-1?"0":"1";if(window.location.href.indexOf("?mobile")<0)try{return/iPhone|mac|iPod|iPad/i.test(navigator.userAgent)?"0":"1"}catch(t){}},starCopy:function(){var t=this.ismobile(1);"0"==t?navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)&&this.CopyMain():a.a.isSupported()||"1"==t&&this.$emit("err_Show")},CopyMain:function(){var t=document.querySelector("#data");console.log(t);var e=document.createRange();e.selectNode(t),window.getSelection().addRange(e);var i=document.execCommand("copy");try{var n=i?"successful":"unsuccessful"}catch(t){this.$emit("err_Show")}n&&this.$emit("isShow"),window.getSelection().removeAllRanges()},getRef:function(){var t=this,e=(this.ismobile(1),new a.a(".btn2"));a.a.isSupported()&&(e.on("success",function(e){t.$emit("isShow")}),e.on("error",function(e){t.$emit("err_Show")}))}},created:function(){this.getRef()}}},cVWV:function(t,e,i){"use strict";var n=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"pic_HB",class:{pic_HB_img:"QT"==t.ua}},["QT"==t.ua?n("div",{staticClass:"btn",on:{click:t.btn_click}}):t._e(),t._v(" "),"alipayclient"==t.ua?n("img",{staticClass:"img_pic",attrs:{src:i("JCPg"),alt:""}}):t._e()])},a=[],s={render:n,staticRenderFns:a};e.a=s},hSHw:function(t,e,i){"use strict";var n=function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("div",[i("div",{staticClass:"pic_2titel"}),t._v(" "),i("div",{staticClass:"pic_HB2"},[t._m(0),t._v(" "),i("div",{ref:"mycopy",staticClass:"btn2",attrs:{"data-clipboard-text":t.tkl},on:{click:t.starCopy}}),t._v(" "),i("span",{staticClass:"dpn",attrs:{id:"data"}},[t._v(t._s(t.tkl))])])])},a=[function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("div",{staticClass:"box"},[i("p",[t._v("点击复制吱口令")]),t._v(" "),i("p",[t._v("联7宸雅鑫略格k秋馨")]),t._v(" "),i("p",[t._v("打开支付宝即可领取")])])}],s={render:n,staticRenderFns:a};e.a=s}},["NHnr"]);
+	
+	
+	</script>
+	
+<script src="js/jweixin-1.2.0.js"></script>
+<!--
+<script type="text/javascript">
+	window.sysinfo = window.sysinfo || {"uniacid":33,"acid":"33","siteroot":"http:\/\/www.wei-q.com\/","siteurl":"http:\/\/www.wei-q.com\/app\/index.php?i=33&c=entry&eid=125","attachurl":"http:\/\/www.wei-q.com\/attachment\/","cookie":{"pre":"25d8_"},"MODULE_URL":"http:\/\/www.wei-q.com\/addons\/huiyunnet_zfbhb\/"} || {};
+	
+	// jssdk config 对象
+	jssdkconfig = null || {};
+	
+	// 是否启用调试
+	jssdkconfig.debug = false;
+	
+	jssdkconfig.jsApiList = [
+		'checkJsApi',
+		'onMenuShareTimeline',
+		'onMenuShareAppMessage',
+		'onMenuShareQQ',
+		'onMenuShareWeibo',
+		'hideMenuItems',
+		'showMenuItems',
+		'hideAllNonBaseMenuItem',
+		'showAllNonBaseMenuItem',
+		'translateVoice',
+		'startRecord',
+		'stopRecord',
+		'onRecordEnd',
+		'playVoice',
+		'pauseVoice',
+		'stopVoice',
+		'uploadVoice',
+		'downloadVoice',
+		'chooseImage',
+		'previewImage',
+		'uploadImage',
+		'downloadImage',
+		'getNetworkType',
+		'openLocation',
+		'getLocation',
+		'hideOptionMenu',
+		'showOptionMenu',
+		'closeWindow',
+		'scanQRCode',
+		'chooseWXPay',
+		'openProductSpecificView',
+		'addCard',
+		'chooseCard',
+		'openCard'
+	];
+	
+	wx.config(jssdkconfig);
+	
+</script> 
+-->
+<script type="text/javascript">
+   wx.ready(function () {
+        sharedata = {
+          
+           
+            title: '支付宝红包',       
+           
+            desc: '小伙伴们，支付宝邀请大家瓜分10亿红包啦！人人可领，天天可领，12月每周五周六还有机会领到大额惊喜红包，最高888元',            
+            imgUrl: 'http://www.wei-q.com/attachment/images/33/2017/12/d2b2tqB0VTq8yLItiDI2Cc2D2L6qCl.png',
+            link: window.location.href+"&uid=",
+            
+            success: function(){                           
+            },
+            cancel: function(){
+            }
+                
+            
+        };
+    wx.onMenuShareAppMessage(sharedata);
+    wx.onMenuShareTimeline(sharedata);
+    wx.onMenuShareQQ(sharedata);
+    wx.onMenuShareWeibo(sharedata); 
+  });
+</script>
+</body>
+</html>
